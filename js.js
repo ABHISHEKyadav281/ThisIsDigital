@@ -1,3 +1,25 @@
+document.addEventListener("readystatechange",function(){
+  if(document.readyState === "complete"){
+       gsap.to(".loading",{
+          y:"-100%",
+          display:"none",
+
+      })
+     
+  }
+
+ 
+})
+
+
+
+
+
+
+
+
+
+
 function init() {
     gsap.registerPlugin(ScrollTrigger);
   
@@ -32,7 +54,7 @@ function init() {
     
   
   }
-  init()
+  // init()
   
   
   gsap.from(".section1 h1", {
